@@ -8,7 +8,7 @@ body{
     background:olive;
   }
 .img{
-opacity: 100%;
+opacity: 0%;
 display: inline-block;
 width: 20%;
 height: auto;
@@ -22,6 +22,10 @@ margin:1%;
 
 #introText{
   visibility: visible;
+  opacity: 0;
+  position: absolute;
+  top: 40vh;
+  left:40vh;
 }
 
 .row{
