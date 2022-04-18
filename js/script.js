@@ -15,32 +15,46 @@ window.onload = function () {
 
     //creation of images
 let imgArray = document.getElementsByClassName(`img`);
-
 let imgDiv= document.getElementById(`imgCollection`);
 
 //creation of titles/text elements
-let state = `intro`
 let titleText = document.getElementById(`introText`);
 
+
+
+//title sequence appears and dissapears after 5 seconds
 $( titleText ).animate({
     opacity: 1
   }, 5000, imgAppear
-  
   );
+
+  $( titleText ).animate({
+    opacity: 0
+  }, 6000);
+
 
 
 function imgAppear(){
+
+
+
 $(imgDiv).show();
 
 for(let i=0;i< imgArray.length; i++){
+
     setTimeout(function (){
-            console.log(imgArray[i]);
-        // $(imgArray[i]).show();
+
         $(imgArray[i]).css("opacity","1");
     },1000*i);
-}
 
 }
+// $( titleText ).hide();
+
+
+
+}
+
+
 
 
 } //end onLoad
