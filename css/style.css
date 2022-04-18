@@ -15,7 +15,6 @@ display: inline-block;
 width: 20%;
 height: auto;
 margin:1%;
-/* visibility: visible; */
 }
 
 #imgCollection{
@@ -45,12 +44,12 @@ justify-content: space-around;
     opacity: 0%;
 display: inline-block;
 width: auto;
-height: auto;
+/* height: auto; */
 margin:1%;
-      /* height:50vh; */
+      height:50vh;
   }
   body{
-    background:blue;
+    background:rgb(0, 0, 0);
 
   }
 }

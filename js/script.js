@@ -18,19 +18,19 @@ let imgArray = document.getElementsByClassName(`img`);
 let imgDiv= document.getElementById(`imgCollection`);
 
 //creation of titles/text elements
-let titleText = document.getElementById(`introText`);
+let introText = document.getElementById(`introText`);
 
 
 
 //title sequence appears and dissapears after 5 seconds
-$( titleText ).animate({
+$( introText ).animate({
     opacity: 1
   }, 5000, imgAppear
   );
 
-  $( titleText ).animate({
-    opacity: 0
-  }, 6000);
+  // $( introText ).animate({
+  //   opacity: 0
+  // }, 5000);
 
 
 
@@ -48,7 +48,7 @@ for(let i=0;i< imgArray.length; i++){
     },1000*i);
 
 }
-// $( titleText ).hide();
+$( introText ).hide();
 
 
 
