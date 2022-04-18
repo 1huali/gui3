@@ -17,7 +17,7 @@ margin:1%;
 }
 
 #imgCollection{
-  visibility: visible;
+  display: none;
 }
 
 #introText{
