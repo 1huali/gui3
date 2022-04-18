@@ -42,7 +42,12 @@ justify-content: space-around;
 /* what sets of rules when this condition applies is media query */
 @media only screen and (max-width: 1000px) {
   .img{
-      height:50vh;
+    opacity: 0%;
+display: inline-block;
+width: auto;
+height: auto;
+margin:1%;
+      /* height:50vh; */
   }
   body{
     background:blue;
