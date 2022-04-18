@@ -4,3 +4,42 @@ Here is a description of any special CSS used.
 By default that's nothing.
 
 **********************************************/
+body{
+    background:olive;
+  }
+.img{
+opacity: 100%;
+display: inline-block;
+width: 20%;
+height: auto;
+margin:1%;
+/* visibility: visible; */
+}
+
+#imgCollection{
+  visibility: visible;
+}
+
+#introText{
+  visibility: visible;
+}
+
+.row{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items:center;
+justify-content: space-around;
+}
+
+/* what sets of rules when this condition applies is media query */
+@media only screen and (max-width: 1000px) {
+  .img{
+      height:50vh;
+  }
+  body{
+    background:blue;
+
+  }
+}
+

@@ -43,19 +43,19 @@ if (state === `intro`){
           displayLookbook();
 }
 
-if (state=== `lookbook`){
-    setTimeout(displayLookbook(),2500);
+// if (state=== `lookbook`){
+//     setTimeout(displayLookbook(),2500);
 
-}
+// }
 
-if (state=== `onTimer`){
-    setTimeout(window.close(),70000);
-}
-setTimeout(function({
-    state= `endTitle`;
-}),65000);
-}
-}
+// if (state=== `onTimer`){
+//     setTimeout(window.close(),70000);
+// }
+// setTimeout(function({
+//     state= `endTitle`;
+// }),65000);
+// }
+// }
 
 function displayTile(){
     introText.style.visibility = "visible"
