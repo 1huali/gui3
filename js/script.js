@@ -5,6 +5,10 @@ state intro : demons belong on earth, and so do U
 - space for the lil description
 - demons all over city
 - close tab
+
+Q: TAKES TIME TO LOAD
+Q: want the image to appear with their time
+Q: does this look clean? 
 */
 
 "use strict";
@@ -19,26 +23,46 @@ let imgDiv= document.getElementById(`imgCollection`);
 
 //creation of titles/text elements
 let introText = document.getElementById(`introText`);
+let titleText = document.getElementById(`titleText`);
 let endText = document.getElementById(`endText`);
 let footer = document.getElementById(`footer`);
+let daylight = document.getElementById(`underDaylight`);
+let darklight = document.getElementById(`underDarklight`);
+
 
 
 //title sequence appears and dissapears after 5 seconds
+// $(footer).show();
+
 $( introText ).animate({
     opacity: 1
   }, 5000, imgAppear
-  );
+);
+// $( introText ).animate({
+//     opacity: 1
+//   }, 5000);
 
-  // $( introText ).animate({
-  //   opacity: 0
-  // }, 5000);
+
+setTimeout(function (){
+  $( titleText ).animate({
+    opacity: 1
+  }, 5000);
+}, 5000);
 
 
+  $( footer ).animate({
+    opacity: 1
+  }, 100);
+
+
+
+
+//-----------------------------functions
 
 function imgAppear(){
 
 
-
+//images fade in at 1 img/sec
 $(imgDiv).show();
 
 for(let i=0;i< imgArray.length; i++){
@@ -49,7 +73,11 @@ for(let i=0;i< imgArray.length; i++){
     },1000*i);
 
 }
-$( introText ).hide();
+//intro text fade out
+$( introText ).animate({
+    opacity: 0
+  }, 100, imgAppear
+  );
 
 
 
