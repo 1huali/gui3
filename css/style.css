@@ -50,7 +50,14 @@ margin:1%;
   }
   body{
     background:rgb(0, 0, 0);
-
+padding: 5px;
   }
+}
+
+/* ??Q : not centered */
+.clockText{
+  font-style: italic;
+  font-size:medium;
+  align-content: center;
 }
 

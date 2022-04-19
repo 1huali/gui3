@@ -19,7 +19,8 @@ let imgDiv= document.getElementById(`imgCollection`);
 
 //creation of titles/text elements
 let introText = document.getElementById(`introText`);
-
+let endText = document.getElementById(`endText`);
+let footer = document.getElementById(`footer`);
 
 
 //title sequence appears and dissapears after 5 seconds
