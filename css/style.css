@@ -12,7 +12,7 @@ body{
   }
 .img{
 opacity: 0%;
-display: inline-block;
+display: block;
 width: 20%;
 height: auto;
 margin:1%;
@@ -33,6 +33,13 @@ margin:1%;
 
 #titleText{
   opacity: 0;
+  width: 100%;
+  background-color: cyan;
+}
+
+
+h2{
+  width:100vw;
 }
 
 .row{
@@ -48,12 +55,12 @@ justify-content: space-around;
   .img{
     opacity: 0%;
 display: inline-block;
-width: auto;
+width: 90vw;
 /* height: auto; */
 margin:1%;
-      height:50vh;
+      height:auto;
   }
-  body{
+  .bodyGradient{
     /* ??Q: background only in second screen */
     background: linear-gradient(#ffffff 0%,#ffffff 51%, #000000 70%);
 padding: 5px;
@@ -61,10 +68,13 @@ padding: 5px;
   /* ??Q : not centered + color not working  */
 .clockText{
   font-style: italic;
-  color: linear-gradient(#000000 0%,#000000 51%, whitesmoke 60%;);
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size:medium;
   align-content: center;
 }
+
 #imgCollection{
 margin:5px ;
 }
@@ -73,8 +83,9 @@ margin:5px ;
 
 
 #footer{
-  position:absolute;
-  bottom:0;
+  color: #ffffff;
+  text-align: center;
+  background-color: aqua;
   width:100%;
   opacity: 0;
 }

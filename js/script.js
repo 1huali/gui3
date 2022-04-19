@@ -7,7 +7,7 @@ state intro : demons belong on earth, and so do U
 - close tab
 
 Q: TAKES TIME TO LOAD
-Q: want the image to appear with their time
+Q: want the image to appear with their time : all under the same divs
 Q: does this look clean? 
 */
 
@@ -61,6 +61,7 @@ setTimeout(function (){
 
 function imgAppear(){
 
+document.getElementsByTagName(`body`)[0].classList.add(`bodyGradient`);
 
 //images fade in at 1 img/sec
 $(imgDiv).show();
