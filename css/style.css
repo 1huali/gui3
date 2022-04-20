@@ -34,7 +34,7 @@ margin:1%;
 #titleText{
   opacity: 0;
   width: 100%;
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 
 
@@ -85,7 +85,7 @@ margin:5px ;
 #footer{
   color: #ffffff;
   text-align: center;
-  background-color: aqua;
+  /* background-color: aqua; */
   width:100%;
   opacity: 0;
 }
