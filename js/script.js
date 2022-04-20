@@ -92,7 +92,7 @@ window.onload = function () {
       opacity: 1
     }, 5000);
 
-
+  
 
 //-----------------------------functions
 
@@ -125,3 +125,5 @@ $( introText ).animate({
 
 
 } //end onLoad
+  }
+}
