@@ -10,29 +10,40 @@ body{
     font-family: Arial;
 
   }
-.img{
-opacity: 0%;
+/* .img{
+opacity: 0;
 display: block;
-width: 20%;
+width: 80%;
 height: auto;
 margin:1%;
+} */
+
+.real_img{
+display: none;
+width: 100%;
+align-content: center;
+margin:1%;
+
+
 }
 
-#imgCollection{
+/* #imgCollection{
   display: none;
-}
+} */
 
-#introText{
+#endText{
   visibility: visible;
   color: whitesmoke;
   opacity: 0;
   position: absolute;
-  top: 40vh;
+  bottom: 40vh;
   left:40vh;
 }
 
 #titleText{
   opacity: 0;
+  position: absolute;
+  background-color: whitesmoke;
   width: 100%;
   /* background-color: cyan; */
 }
@@ -55,14 +66,15 @@ justify-content: space-around;
   .img{
     opacity: 0%;
 display: inline-block;
-width: 90vw;
+width: 80vw;
 /* height: auto; */
 margin:1%;
       height:auto;
   }
   .bodyGradient{
     /* ??Q: background only in second screen */
-    background: linear-gradient(#ffffff 0%,#ffffff 51%, #000000 70%);
+    /* background: linear-gradient(#ffffff 0%,#ffffff 51%, #000000 70%); */
+    background-color: #ffffff;
 padding: 5px;
   }
   /* ??Q : not centered + color not working  */

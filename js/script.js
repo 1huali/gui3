@@ -54,7 +54,7 @@ window.onload = function () {
     console.log("in run");
   
   //creation of images
-  let imgArray = document.getElementsByClassName(`img`);
+  let imgArray = document.getElementsByClassName(`real_img`);
   let imgDiv= document.getElementById(`imgCollection`);
   //console.log(imgDiv.getBoundingClientRect().height);
   
@@ -72,25 +72,15 @@ window.onload = function () {
   //title sequence appears and dissapears after 5 seconds
   // $(footer).show();
   
-  $( introText ).animate({
+  $( titleText ).animate({
       opacity: 1
-    }, 5000, imgAppear
+    }, 500, imgAppear
   );
-  // $( introText ).animate({
-  //     opacity: 1
-  //   }, 5000);
-  
-  
-  setTimeout(function (){
-    $( titleText ).animate({
-      opacity: 1
-    }, 5000);
-  }, 5000);
-  
+
   
     $( footer ).animate({
       opacity: 1
-    }, 5000);
+    }, 600);
 
   
 
@@ -101,21 +91,42 @@ function imgAppear(){
 document.getElementsByTagName(`body`)[0].classList.add(`bodyGradient`);
 
 //images fade in at 1 img/sec
+
 $(imgDiv).show();
+
 
 for(let i=0;i< imgArray.length; i++){
 
     setTimeout(function (){
 
-        $(imgArray[i]).css("opacity","1");
+        $(imgArray[i]).css({"opacity":".5", "display":"block"});
     },1000*i);
 
+  //   setTimeout(function (){
+
+  //     $(imgArray[i]).css({"opacity":"0","display":"none"});
+
+
+  // },2000);
+
 }
-//intro text fade out
-$( introText ).animate({
-    opacity: 0
-  }, 100, imgAppear
-  );
+
+for(let i=0;i< imgArray.length; i++){
+
+  setTimeout(function (){
+
+      $(imgArray[i]).css({"opacity":"0", "display":"none"});
+  },2000*i);
+
+
+  $( endText ).animate({
+    opacity: 1
+  }, 2000*i+1000);
+
+  // window.close()
+}
+
+
 
 
 
